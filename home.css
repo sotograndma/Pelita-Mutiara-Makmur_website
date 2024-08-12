@@ -1,0 +1,255 @@
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(209, 209, 209) 100%);
+    margin: 0;
+    font-family: "Poppins" !important;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* media screen */
+
+
+
+/* animation */
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideIn 0.5s forwards;
+}
+
+.hidden_tp2 {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s, transform 1s;
+}
+
+.visible_tp2 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideIn 1s forwards;
+}
+
+/* screen height */
+
+.mid_height{
+    height: 300px;
+}
+
+/* screen size */
+
+.screen_size{
+    width: 1200px !important;
+}
+
+/* navbar carousel */
+
+.carousel-item_navbar {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item_navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-item_navbar img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.navbar-custom {
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-custom_gallery{
+    background-color: white;
+    box-shadow: 0px 5px 100px 2px rgb(31, 31, 31);
+}
+
+.navbar-custom.scrolled {
+    background-color: white;
+    box-shadow: 0px 5px 100px 2px rgb(31, 31, 31);
+}
+
+.navbar-custom a {
+    color: white !important;
+    transition: color 0.3s;
+}
+
+.navbar-custom.scrolled a {
+    color: black !important;
+}
+
+.navbar-custom.scrolled a:hover {
+    color: #931F1F !important;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* carousel modal */
+
+.carousel-item_modal img {
+    width: auto !important;
+    height: 500px !important;
+    object-fit: cover;
+    position: relative;
+    left: 200px;
+}
+
+/* font size */
+
+.fs_12{
+    font-size: 0.75em;
+}
+
+.fs_14{
+    font-size: 0.875em;
+}
+
+.fs_16{
+    font-size: 1em;
+}
+
+.fs_18{
+    font-size: 1.125em;
+}
+
+.fs_20{
+    font-size: 1.25em;
+}
+
+/* color */
+
+.white{
+    color: white !important;
+}
+
+.black{
+    color: #0E0E0E !important;
+}
+
+.bg_white{
+    background-color: white !important;
+}
+
+.red{
+    color: #D22929 !important;
+}
+
+.dred{
+    color: #931F1F !important;
+}
+
+.bg_dred{
+    background-color: #931F1F !important;
+}
+
+.bg_gr_whrey{
+    background: rgb(46,63,105);
+    background: linear-gradient(20deg, rgba(46,63,105,1) 0%, rgba(15,21,35,1) 100%);
+}
+
+.bg_gr_whrey2{
+    background: rgb(46,63,105);
+    background: linear-gradient(320deg, rgba(46,63,105,1) 0%, rgba(15,21,35,1) 100%);
+}
+
+.bg_lgrey{
+    background: rgb(46,63,105);
+    background: linear-gradient(0deg, rgba(46,63,105,1) 0%, rgba(15,21,35,1) 100%);
+}
+
+.bg_dgrey{
+    background: rgb(25,35,59);
+    background: linear-gradient(40deg, rgba(25,35,59,1) 0%, rgba(15,21,35,1) 100%);
+}
+/* other */
+
+a{
+    text-decoration: none !important;
+    color: #0E0E0E !important;
+}
+
+p{
+    margin-bottom: 0px !important;
+    color: #0E0E0E !important;
+}
+
+.nav-link{
+    color: #D22929 !important;
+    font-weight: 500 !important;
+    border-radius: 30px !important;
+    padding: 10px 30px 10px 30px !important;
+}
+
+.nav-link:hover{
+    background-color: #751919;
+    color: white !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #931F1F !important;
+    color: white !important;
+    box-shadow: 0px 0px 25px 3px #931F1F;
+}
+
+.btn-primary{
+    background-color: #931F1F !important;
+    border-color: #931F1F !important;
+    font-size: 0.875em !important;
+}
+
+.btn-primary:hover{
+    background-color: #751919 !important;
+    border-color: #751919 !important;
+    box-shadow: 0px 0px 25px 3px #931F1F;
+    
+}
+
+/* hover */
+
+a:hover{
+    color: #931F1F !important;
+}
